@@ -2,21 +2,21 @@
 "type" = "creamsicle"
 # "type.builtin"
 # "type.enum"
-# "type.enum.variant" = "cherry_blossom"
-"constructor" = "violet"
+# "type.enum.variant"
+"constructor" = "lilac"
 "constant" = "sky"
 # "constant.builtin"
 # "constant.builtin.boolean"
-# "constant.character" = "cherry_blossom"
-# "constant.character.escape" = "sky"
+# "constant.character"
+# "constant.character.escape"
 # "constant.numeric"
 # "constant.numeric.integer"
 # "constant.numeric.float"
 "string" = "sour_apple"
-"string.regexp" = "violet"
+"string.regexp" = "lilac"
 "string.special" = "blueberry"
-"string.special.path" = "pond"
-"string.special.url" = { fg = "pond", underline.style = "line" }
+"string.special.path" = "peacock"
+"string.special.url" = { fg = "peacock", underline.style = "line" }
 "string.special.symbol" = "blueberry"
 "comment" = "elephant"
 # "comment.line"
@@ -30,7 +30,7 @@
 # "variable.other"
 # "variable.other.member"
 # "variable.other.member.private"
-"label" = "leaf"
+"label" = "goddess"
 "punctuation" = "honeycomb"
 # "punctuation.delimiter"
 # "punctuation.bracket"
@@ -49,7 +49,7 @@
 # "keyword.storage.type"
 # "keyword.storage.modifier"
 "operator" = "honeycomb"
-"function" = "violet"
+"function" = "lilac"
 # "function.builtin"
 # "function.method"
 # "function.method.private"
@@ -63,7 +63,8 @@
 # "markup.normal"
 # "markup.normal.completion"
 # "markup.normal.hover"
-"markup.heading" = { fg = "cherry_blossom", underline = { color = "cherry_blossom", style = "dashed" } }
+# "markup.heading"
+"markup.heading" = "cherry_blossom"
 # "markup.heading.marker"
 # "markup.heading.1"
 # "markup.heading.2"
@@ -82,9 +83,9 @@
 "markup.italic" = { modifiers = ["italic"] }
 "markup.strikethrough" = { modifiers = ["crossed_out"] }
 # "markup.link"
-"markup.link.url" = { fg = "pond", underline.style = "line" }
-"markup.link.label" = "pond"
-"markup.link.text" = "violet"
+"markup.link.url" = { fg = "peacock", underline.style = "line" }
+"markup.link.label" = "peacock"
+"markup.link.text" = "lilac"
 "markup.quote" = "elephant"
 "markup.raw" = "sour_apple"
 # "markup.raw.inline"
@@ -98,14 +99,14 @@
 # "diff.minus.gutter"
 "diff.delta" = "sky"
 "diff.delta.moved" = "creamsicle"
-"diff.delta.conflict" = "violet"
+"diff.delta.conflict" = "lilac"
 # "diff.delta.gutter"
 "ui.background" = { bg = "blackboard" }
 "ui.background.separator" = "cherry_blossom"
-"ui.cursor" = { bg = "soil", fg = "chalk" }
-# "ui.cursor.normal"
-# "ui.cursor.insert"
-# "ui.cursor.select"
+# "ui.cursor"
+"ui.cursor.normal" = { bg = "opium", fg = "blackboard" }
+"ui.cursor.insert" = { bg = "sage", fg = "blackboard" }
+"ui.cursor.select" = { bg = "cloud", fg = "blackboard" }
 "ui.cursor.match" = { fg = "lemon", modifiers = ["bold"], underline.style = "line" }
 # "ui.cursor.primary"
 "ui.cursor.primary.normal" = { bg = "cherry_blossom", fg = "blackboard" }
@@ -126,7 +127,7 @@
 "ui.bufferline" = { fg = "elephant" }
 "ui.bufferline.active" = { fg = "cherry_blossom", underline.style = "line" }
 "ui.bufferline.background" = { bg = "blackboard" }
-"ui.popup" = { bg = "film" }
+"ui.popup" = { fg = "creamsicle" }
 "ui.popup.info" = { bg = "film", fg = "creamsicle" }
 # "ui.picker.header"
 # "ui.picker.header.column"
@@ -137,11 +138,10 @@
 "ui.text.focus" = { bg = "metal" }
 "ui.text.inactive" = { fg = "elephant" }
 "ui.text.info" = "honeycomb"
-# "ui.text.directory" = "creamsicle"
 "ui.text.directory" = "creamsicle"
-"ui.virtual.ruler" = "elephant"
-"ui.virtual.whitespace" = "elephant"
-"ui.virtual.indent-guide" = "film"
+"ui.virtual.ruler" = { bg = "charcoal" }
+"ui.virtual.whitespace" = "soil"
+"ui.virtual.indent-guide" = "soil"
 "ui.virtual.inlay-hint" = { fg = "soil", modifiers = ["italic"] }
 # "ui.virtual.inlay-hint.parameter"
 # "ui.virtual.inlay-hint.type"
@@ -150,24 +150,24 @@
 "ui.menu" = { bg = "film" }
 "ui.menu.selected" = { fg = "cherry_blossom", modifiers = ["bold"], underline = { color = "cherry_blossom", style = "line" } }
 "ui.menu.scroll" = { bg = "film", fg = "cherry_blossom" }
-"ui.selection" = { bg = "concrete" }
-"ui.selection.primary" = { bg = "ocean" }
-"ui.highlight" = { bg = "concrete" }
-# "ui.highlight.frameline"
+"ui.selection" = { bg = "asphalt" }
+"ui.selection.primary" = { bg = "sea" }
+"ui.highlight" = { bg = "sea" }
+"ui.highlight.frameline" = { bg = "date" }
 "ui.cursorline.primary" = { bg = "metal" }
 # "ui.cursorline.secondary"
 "ui.cursorcolumn.primary" = { bg = "metal" }
 # "ui.cursorcolumn.secondary"
 "warning" = { bg = "film", fg = "creamsicle" }
 "error" = { bg = "film", fg = "strawberry" }
-"info" = { bg = "film", fg = "violet" }
+"info" = { bg = "film", fg = "lilac" }
 "hint" = { bg = "film", fg = "chalk" }
 "diagnostic" = { underline = { color = "chalk", style = "curl" } }
 "diagnostic.hint" = { underline = { color = "chalk", style = "curl" } }
-"diagnostic.info" = { underline = { color = "violet", style = "curl" } }
+"diagnostic.info" = { underline = { color = "lilac", style = "curl" } }
 "diagnostic.warning" = { underline = { color = "creamsicle", style = "curl" } }
 "diagnostic.error" = { underline = { color = "strawberry", style = "curl" } }
-"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.unnecessary" = { underline = { color = "honeycomb", style = "dotted" } }
 "diagnostic.deprecated" = { modifiers = ["crossed_out"] }
 # "tabstop" = { modifiers = ["italic"] }
 
@@ -176,20 +176,26 @@ blackboard = "#181716"
 strawberry = "#f56e7f"
 sour_apple = "#bec975"
 honeycomb = "#e8d6a7"
-violet = "#c0a1c8"
+lilac = "#caa2ca"
 cherry_blossom = "#e5a1a3"
-sky = "#92bbc9"
+sky = "#a5b6ce"
 elephant = "#88847f"
 soil = "#73665b"
 salmon = "#f58669"
-leaf = "#7ac973"
-creamsicle = "#f3b061"
-blueberry = "#9697e4"
-princess = "#ed83bb"
-pond = "#63c693"
+goddess = "#a2caa0"
+creamsicle = "#f7bb6c"
+blueberry = "#9293ec"
+princess = "#ef7dc0"
+peacock = "#5dccc3"
 chalk = "#d5d0c9"
-metal = "#242628"
+metal = "#212225"
+date = "#210f11"
 film = "#2e2a27"
-ocean = "#0f3f4e"
-concrete = "#383838"
+charcoal = "#313735"
+asphalt = "#43403d"
+sea = "#0f3f4e"
+opium = "#978182"
+sage = "#878972"
+cloud = "#808387"
+nectarine = "#f1d090"
 lemon = "#ffef43"
