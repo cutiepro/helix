@@ -7,7 +7,7 @@
 "constant" = "sky"
 # "constant.builtin"
 # "constant.builtin.boolean"
-# "constant.character" = "sour_apple"
+# "constant.character"
 "constant.character.escape" = "blueberry"
 # "constant.numeric"
 # "constant.numeric.integer"
@@ -16,14 +16,14 @@
 "string.regexp" = "blueberry"
 "string.special" = "blueberry"
 "string.special.path" = "peacock"
-"string.special.url" = { fg = "peacock", underline.style = "line" }
+"string.special.url" = { fg = "peacock", underline = { color = "peacock", style = "line" } }
 "string.special.symbol" = "blueberry"
-"comment" = { fg = "elephant" }
+"comment" = "elephant"
 # "comment.line"
-# "comment.line.documentation"
+"comment.line.documentation" = "chalk"
 # "comment.block"
-# "comment.block.documentation"
-# "comment.unused"
+"comment.block.documentation" = "chalk"
+"comment.unused" = { modifiers = ["dim"] }
 "variable" = "peach"
 "variable.builtin" = "princess"
 "variable.parameter" = "coral"
@@ -63,7 +63,7 @@
 # "markup.normal"
 # "markup.normal.completion"
 # "markup.normal.hover"
-# "markup.heading"
+"markup.heading" = { fg = "cherry_blossom", modifiers = ["bold"] }
 # "markup.heading.marker"
 "markup.heading.1" = { fg = "cherry_blossom", modifiers = ["bold"] }
 "markup.heading.2" = { fg = "coral", modifiers = ["bold"] }
@@ -81,8 +81,8 @@
 "markup.bold" = { fg = "lilac", modifiers = ["bold"] }
 "markup.italic" = { fg = "sky", modifiers = ["italic"] }
 "markup.strikethrough" = { modifiers = ["crossed_out"] }
-"markup.link" = "peacock"
-"markup.link.url" = { fg = "peacock", underline.style = "line" }
+"markup.link" = { fg = "peacock", underline = { color = "peacock", style = "line" } }
+"markup.link.url" = { fg = "peacock", underline = { color = "peacock", style = "line" } }
 "markup.link.label" = "goddess"
 "markup.link.text" = "goddess"
 "markup.quote" = "peach"
@@ -106,7 +106,7 @@
 "ui.cursor.normal" = { bg = "opium", fg = "raven", modifiers = ["bold"] }
 "ui.cursor.insert" = { bg = "sage", fg = "raven", modifiers = ["bold"] }
 "ui.cursor.select" = { bg = "cloud", fg = "raven", modifiers = ["bold"] }
-"ui.cursor.match" = { fg = "lemon", modifiers = ["bold"], underline.style = "line" }
+"ui.cursor.match" = { fg = "lemon", modifiers = ["bold"], underline = { color = "lemon", style = "line" } }
 # "ui.cursor.primary"
 "ui.cursor.primary.normal" = { bg = "cherry_blossom", fg = "raven", modifiers = [
   "bold",
@@ -126,9 +126,9 @@
 "ui.statusline.normal" = { bg = "cherry_blossom", fg = "raven" }
 "ui.statusline.insert" = { bg = "sour_apple", fg = "raven" }
 "ui.statusline.select" = { bg = "sky", fg = "raven" }
-"ui.statusline.separator" = { modifiers = ["bold"] }
+"ui.statusline.separator" = { fg = "creamsicle", modifiers = ["bold"] }
 "ui.bufferline" = { fg = "elephant" }
-"ui.bufferline.active" = { fg = "cherry_blossom", modifiers = ["bold"], underline.style = "double_line" }
+"ui.bufferline.active" = { fg = "cherry_blossom", modifiers = ["bold"], underline = { color = "cherry_blossom", style = "double_line" } }
 "ui.bufferline.background" = { bg = "raven" }
 "ui.popup" = { bg = "cocoa", fg = "nectarine" }
 # "ui.popup.info"
@@ -145,7 +145,9 @@
 "ui.virtual.ruler" = { bg = "charcoal" }
 "ui.virtual.whitespace" = "soil"
 "ui.virtual.indent-guide" = "soil"
-"ui.virtual.inlay-hint" = { fg = "soil", modifiers = ["italic"] }
+"ui.virtual.inlay-hint" = { bg = "blackboard", fg = "soil", modifiers = [
+  "italic",
+] }
 # "ui.virtual.inlay-hint.parameter"
 # "ui.virtual.inlay-hint.type"
 "ui.virtual.wrap" = "soil"
@@ -161,15 +163,15 @@
 # "ui.cursorline.secondary"
 "ui.cursorcolumn.primary" = { bg = "ink" }
 # "ui.cursorcolumn.secondary"
-"warning" = { bg = "cocoa", fg = "honeycomb", modifiers = ["italic"] }
-"error" = { bg = "cocoa", fg = "sand", modifiers = ["italic"] }
-"info" = { bg = "cocoa", fg = "lilac", modifiers = ["italic"] }
-"hint" = { bg = "cocoa", fg = "chalk", modifiers = ["italic"] }
+"warning" = { fg = "lantern", modifiers = ["italic"] }
+"error" = { fg = "salsa", modifiers = ["italic"] }
+"info" = { fg = "orchid", modifiers = ["italic"] }
+"hint" = { fg = "chalk", modifiers = ["italic"] }
 "diagnostic" = { underline = { color = "chalk", style = "curl" } }
 "diagnostic.hint" = { underline = { color = "chalk", style = "curl" } }
-"diagnostic.info" = { underline = { color = "lilac", style = "curl" } }
-"diagnostic.warning" = { underline = { color = "honeycomb", style = "curl" } }
-"diagnostic.error" = { underline = { color = "sand", style = "curl" } }
+"diagnostic.info" = { underline = { color = "orchid", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "lantern", style = "curl" } }
+"diagnostic.error" = { underline = { color = "salsa", style = "curl" } }
 "diagnostic.unnecessary" = { modifiers = ["dim"] }
 "diagnostic.deprecated" = { modifiers = ["crossed_out"] }
 "tabstop" = { modifiers = ["italic"] }
@@ -212,5 +214,8 @@ sea = "#0f3f4e"
 opium = "#978182"
 sage = "#878972"
 cloud = "#808387"
+orchid = "#ec89ed"
 nectarine = "#f1d090"
+salsa = "#f7524c"
+lantern = "#f7bf32"
 lemon = "#ffef43"
